@@ -1,4 +1,5 @@
 # This is a basic workflow to help you get started with Actions
+
 name: deploy
 
 # Controls when the workflow will run
@@ -21,7 +22,7 @@ jobs:
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USER }}
           script: |
-            cd txmayawsbucket-lecture
+            cd txmayawsbucket
             git pull 
             pm2 stop index.js
             pm2 start index.js
