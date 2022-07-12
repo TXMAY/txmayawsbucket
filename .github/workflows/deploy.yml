@@ -22,5 +22,5 @@ jobs:
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USER }}
           script: |
-            cd txmayawsbucket-lecture
+            cd txmayawsbucket
             git pull
